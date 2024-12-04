@@ -1,0 +1,147 @@
+.leagues{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("https://ae01.alicdn.com/kf/HTB1JXq4mnTI8KJjSsphq6AFppXaK/VinylBDS-Stadium-Background-For-Photography-Light-Seat-Photo-Shoot-Background-Football-Field-Photographer-Backdrop.jpg_q50.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    .leagues-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: .5rem;
+        background:rgba(0, 0, 0, 0.2);
+        padding: 5px 5px;
+
+        .item {
+            width: 90px;
+            text-align: center;
+            background-color: #12224e;
+            cursor: pointer;
+    
+            &:hover{
+                background-color: #21315e;
+                transform: scale(0.980);
+            }
+            img{
+                width: 90px;
+                height: 90px;
+                object-fit: fill;
+            }
+    
+            h2{
+                font-size: 12px;
+                text-transform: uppercase;
+                margin-top: 10px;
+                font-weight: 400;
+            }
+        }
+    }
+    
+
+    
+
+
+
+    h1{
+        text-align: center;
+    }
+    #content{
+        background-color: transparent;
+    }
+    #teams {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+        background-color: transparent;
+        border-radius: 6px;
+    }
+    @media screen and (max-width: 500px){
+        #content{
+            width: 100%;
+        }
+        #teams {
+            width: 100%;
+        }
+    }
+    #clteam{
+        background-color: #80aa3b;
+        color: white;
+    }
+    #clplayoff{
+        background-color: #5f891a;
+        color: white;
+    }
+    #elteams{
+        background-color: #bd910a;
+        color: white;
+    }
+    #downteams{
+        background-color: #a6322e;
+        color: white;
+    }
+    #teams td, #teams th {
+        padding: 8px;
+    }
+    #teams td{
+        text-align: center;
+    }
+    .borederleft{
+        border-top-left-radius: 6px;
+    }
+    .borderright{
+        border-top-right-radius: 6px;
+    }
+    .borderbottomleft{
+        border-bottom-left-radius: 6px;
+    }
+    .borderbottomright{
+        border-bottom-right-radius: 6px;
+    }
+    @media screen and (max-width: 500px){
+        #tn{
+            display: none;
+        }
+    }
+    #teamsnames{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    @media screen and (max-width: 500px){
+        #teamsnames{
+            justify-content: center;
+        }
+    }
+    #teams tr{
+        background-color: #eeeeee;
+    }
+    #teams th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color: #e0e0e0;
+    }
+    > span{
+        padding: 10px 10px;
+        background:rgba(0, 0, 0, 0.5);
+    }
+    .tableinfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .colordiv{
+        width: 15px;
+        height: 15px;
+    }
+}
