@@ -62,3 +62,73 @@ export default function Home() {
     </div>
   )
 }
+
+
+
+/*
+import { BottomNavigation } from  "reactjs-bottom-navigation";
+import { IoHome} from "react-icons/io5";
+import { HiHome } from "react-icons/hi";
+import { AiFillProfile } from "react-icons/ai";
+import { MdExplore } from "react-icons/md";
+import { BiMoney, BiWallet } from "react-icons/bi";
+
+
+function  Home() {
+
+const  bottomNavItems = [
+	{
+		title:  "Home",
+		onClick: ({ id }) =>  alert("menu clicked " + id),
+		icon: <HiHome />, // just for example
+		activeIcon: <IoHome color="#fff" />
+	},
+
+	// items can have either title, icon or both or neither!
+	{
+		title:  "Explore",
+		onClick: ({ id }) =>  alert("menu clicked " + id),
+		icon: <MdExplore />, // just for example
+		activeIcon: <MdExplore color="#fff" />
+	},
+	{
+		title:  "Withdraw",
+		onClick: ({ id }) =>  alert("menu clicked " + id),
+		icon: <BiMoney />, // just for example
+		activeIcon: <BiMoney  color="#fff" />
+	},
+	{
+		title:  "Deposit",
+		onClick: ({ id }) =>  alert("menu clicked " + id),
+		icon: <BiWallet />, // just for example
+		activeIcon: <BiWallet  color="#fff" />
+	},
+	{
+		title:  "Account",
+		onClick: ({ id }) =>  alert("menu clicked " + id),
+		icon: <AiFillProfile />, // just for example
+		activeIcon: <AiFillProfile color="#fff" />
+	},
+	// the render method enables custom item content
+	{
+		render: ({ isActive, id }) =>  isActive ? <strong>{id}</strong> : <span>{id}</span>,
+	},
+];
+
+  
+
+return (
+<div>
+	<BottomNavigation
+		items={bottomNavItems}
+		selected={0}
+		onItemClick={(item) =>  console.log(item)}
+		activeBgColor="slateBlue"
+		activeTextColor="white"
+	/>
+</div>
+);
+
+}
+export  default  Home;
+*/
